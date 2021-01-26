@@ -1,5 +1,52 @@
 @import "vars";
 @import "libs";
 @import "fonts";
+@import "global";
 @import "media";
 
+.header {
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 13px;
+  }
+
+  &__toolbar-items {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-column-gap: 40px;
+  }
+
+  &__toolbar-item {
+    color: #333;
+    &:hover {
+      transform: scale(1.1);
+    }
+    
+    &--buy {
+      height: 48px;
+      width: 102px;
+      background-color: #333;
+      transition: transform .3s;
+    }
+  }
+
+  &__toolbar-link {
+    font-size: 14px;
+    text-align: center;
+    line-height: 48px;
+    width: 100%;
+    color: $color-text;
+    &:hover {
+      // color: red;
+      font-weight: bold;
+    }
+
+    &--buy {
+      display: inline-block;
+      font-size: 12px;
+      color: #fff;
+    }
+  }
+}
