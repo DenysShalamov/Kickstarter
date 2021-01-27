@@ -2,7 +2,7 @@
 @import "libs";
 @import "fonts";
 @import "global";
-@import "media";
+
 
 .header {
   &__toolbar {
@@ -50,3 +50,39 @@
     }
   }
 }
+
+.top {
+  &__inner {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__img {
+    order: 1;
+    max-width: 816px;
+    overflow: hidden;
+  }
+
+  &__box {
+    max-width: 450px;
+    padding-top: 64px;
+    padding-bottom: 44px;
+  }
+  &__title {
+    
+    @extend %dinpro-black;
+    padding-bottom: 44px;
+    font-size: 64px;
+    line-height: 83px;
+    text-transform: uppercase;
+    color: $color-text;
+  }
+
+  &__text {
+    max-width: 276px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color-text;
+  }
+}
+@import "media";
