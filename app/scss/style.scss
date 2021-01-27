@@ -59,7 +59,7 @@
 
   &__img {
     order: 1;
-    max-width: 816px;
+    max-width: 939px;
     overflow: hidden;
   }
 
@@ -68,7 +68,6 @@
     padding-top: 64px;
   }
   &__title {
-    
     @extend %dinpro-black;
     padding-bottom: 44px;
     font-size: 64px;
@@ -116,6 +115,42 @@
     &:hover {
       transform: scale(1.1);
     }
+  }
+}
+
+.advantages {
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    // grid-template-rows: auto 4.5em auto;
+    grid-column-gap: 30px;
+    margin-top: 49px;
+  }
+
+  &__img {
+    height: 45px;
+    width: 50px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    min-height: 60px;
+    margin-top: 40px;
+    @extend %dinpro-medium;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-text;
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 20px;
+    color: #7c7c7c;
   }
 }
 @import "media";
