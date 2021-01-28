@@ -42,7 +42,7 @@ function css() {
   return src([
     'node_modules/normalize.css/normalize.css',
     'node_modules/slick-carousel/slick/slick.css',
-    
+    'node_modules/video.js/dist/video.css'
     
   ])
     .pipe(concat('_libs.scss'))
@@ -64,7 +64,8 @@ function script() {
 function js() {
   return src([
     'node_modules/jquery/dist/jquery.js',
-    'node_modules/slick-carousel/slick/slick.js'
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/video.js/dist/video.js'
     
   ])
     .pipe(concat('libs.min.js'))

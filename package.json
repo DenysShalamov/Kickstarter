@@ -16,7 +16,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^7.1.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "video.js": "^7.10.2"
   },
   "dependencies": {
     "gulp-uglify": "^3.0.2",
