@@ -19,7 +19,7 @@
   }
 
   &__toolbar-item {
-    color: #333;
+    color: $color-text;
     &:hover {
       transform: scale(1.1);
     }
@@ -27,7 +27,7 @@
     &--buy {
       height: 48px;
       width: 102px;
-      background-color: #333;
+      background-color: $color-text;
       transition: transform .3s;
     }
   }
@@ -191,7 +191,7 @@ video {
     text-transform: uppercase;
     font-size: 56px;
     line-height: 72px;
-    color: #333;
+    color: $color-text;
     background-color: transparent;
   }
 
@@ -251,7 +251,7 @@ video {
     font-size: 56px;
     line-height: 72px;
     text-transform: uppercase;
-    color: #333333;
+    color: $color-text;
   }
 
   &__img {
@@ -294,15 +294,15 @@ video {
 
     &:hover {
       &::after {
-        background-color: #333;
-        border-color: #333333;
+        background-color: $color-text;
+        border-color: $color-text;
       }
 
       .technology__img-text--1 {
         top: -200px;
         width: 130px;
-        border-left: 1px solid #333333;
-        border-top: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-top: 1px solid $color-text;
         margin-bottom: 50px;
         height: 140px;
         padding-top: 10px;
@@ -312,8 +312,8 @@ video {
       .technology__img-text--2 {
         width: 180px;
         margin-top: 50px;
-        border-left: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 140px;
         padding-top: 90px;
         padding-left: 50px;
@@ -322,8 +322,8 @@ video {
       .technology__img-text--3 {
         width: 110px;
         margin-top: 50px;
-        border-left: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 180px;
         padding-top: 150px;
         padding-left: 50px;
@@ -332,8 +332,8 @@ video {
       .technology__img-text--4 {
         top: -140px;
         width: 150px;
-        border-left: 1px solid #333333;
-        border-top: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-top: 1px solid $color-text;
         height: 140px;
         padding-top: 10px;
         padding-left: 50px;
@@ -342,8 +342,8 @@ video {
       .technology__img-text--5 {
         width: 220px;
         margin-top: 50px;
-        border-left: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 110px;
         padding-top: 60px;
         padding-left: 50px;
@@ -353,18 +353,18 @@ video {
         top: -200px;
         right: 5px;
         width: 150px;
-        border-right: 1px solid #333333;
-        border-top: 1px solid #333333;
+        border-right: 1px solid $color-text;
+        border-top: 1px solid $color-text;
         height: 140px;
         padding-top: 10px;
         padding-right: 30px;
       }
 
       .technology__img-text--7 {
-        width: 150px;
+        width: 160px;
         margin-top: 50px;
-        border-left: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 150px;
         padding-top: 120px;
         padding-left: 50px;
@@ -374,8 +374,8 @@ video {
         width: 160px;
         right: 5px;
         margin-top: 50px;
-        border-right: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-right: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 250px;
         padding-top: 220px;
         padding-right: 50px;
@@ -384,8 +384,8 @@ video {
       .technology__img-text--9 {
         top: -100px;
         width: 130px;
-        border-left: 1px solid #333333;
-        border-top: 1px solid #333333;
+        border-left: 1px solid $color-text;
+        border-top: 1px solid $color-text;
         margin-bottom: 50px;
         height: 50px;
         padding-top: 10px;
@@ -396,8 +396,8 @@ video {
         width: 160px;
         right: 5px;
         margin-top: 50px;
-        border-right: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-right: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 250px;
         padding-top: 200px;
         padding-right: 50px;
@@ -407,8 +407,8 @@ video {
         width: 160px;
         right: 5px;
         margin-top: 50px;
-        border-right: 1px solid #333333;
-        border-bottom: 1px solid #333333;
+        border-right: 1px solid $color-text;
+        border-bottom: 1px solid $color-text;
         height: 230px;
         padding-top: 200px;
         padding-right: 50px;
@@ -489,9 +489,38 @@ video {
     
     font-size: 14px;
     line-height: 21px;
-    color: #333333;
+    color: $color-text;
+  }
+}
+
+.review {
+  &__inner {
+    text-align: center;
+    margin: 87px auto 0;
+    max-width: 786px;
+    position: relative;
   }
 
-  
+  &__text {
+    margin: 32px auto 30px;
+    text-align: center;
+    @extend %dinpro-medium;
+    font-size: 24px;
+    line-height: 36px;
+    color: $color-text;
+  }
+
+  &__name {
+    font-size: 16px;
+    line-height: 27px;
+    margin: 20px auto 5px;
+    color: $color-text;
+  }
+
+  &__position {
+    font-size: 14px;
+    line-height: 17px;
+    color: #7C7C7C;
+  }
 }
 @import "media";
