@@ -156,7 +156,81 @@
 
 .video {
   &__inner {
-    margin-top: 155px;
+    margin: 155px auto 0 auto;
+    // margin-top: 155px;
+    max-width: 1440px;
+  }
+}
+
+video {
+  object-fit: contain;
+}
+
+.design {
+  &__inner {
+    display: flex;
+    margin-top: 150px;
+    justify-content: space-between;
+    position: relative;
+    max-width: 940px;
+  }
+
+  &__photo {
+    background: url('../images/design.png');
+    height: 388px;
+    width: 582px;
+    background-size: cover;
+  }
+
+  &__title {
+    position: absolute;
+    top: 10px;
+    left: 52.5%;
+    max-width: 480px;
+    @extend %dinpro-medium;
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 72px;
+    color: #333;
+    background-color: transparent;
+  }
+
+  &__article {
+    margin-left: 30px;
+  }
+
+  &__text {
+    margin-top: 180px;
+    width: 378px;
+    @extend %helvetica-medium;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7c7c7c;
+  }
+
+  &__link {
+    display: inline-block;
+    @extend %helvetica-medium;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #0DB2B3;
+    padding-top: 30px;
+
+    &::after {
+      content: "";
+      display: block;
+      border: 1px solid #0db2b3;
+      width: 53px;
+      margin-top: 6px;
+      transition: width .3s;
+    }
+
+    &:hover {
+      &::after {
+        width: 125px;
+      }
+    }
   }
 }
 @import "media";
