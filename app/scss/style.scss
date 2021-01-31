@@ -547,7 +547,7 @@ video {
 
   &__items-app {
     margin-top: 120px;
-    margin-left: 20%;
+    margin-left: 30%;
   }
   &__header {
     margin-bottom: 40px;
@@ -584,6 +584,100 @@ video {
     position: absolute;
     bottom: 16px;
     right: 0;
+  }
+}
+
+.question {
+  &__inner {
+    display: flex;
+    max-width: 1020px;
+    margin: 180px auto 0;
+    justify-content: space-between;
+  }
+
+  &__title {
+    @extend %dinpro-medium;
+    font-size: 56px;
+    line-height: 72px;
+    max-width: 520px;
+  }
+
+  &__form {
+    flex-grow: 2;
+    margin-left: 102px;
+  }
+
+  &__form-input {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #828282;
+  }
+
+  &__form-input--email {
+    margin-bottom: 19px;
+  }
+
+  &__form-input--text {
+    height: 128px;
+    padding-bottom: 80px;
+  }
+
+  &__btn {
+    margin-top: 30px;
+    width: 102px;
+    height: 48px;
+    background: #0db2b3;
+    font-size: 12px;
+    line-height: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    transition: transform .2s;
+    text-align: center;
+    padding-top: 10px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.footer {
+  &__inner {
+    max-width: 762px;
+    margin: 142px auto 100px;
+    text-align: center;
+    position: relative;
+  }
+
+  &__logo {
+    margin-bottom: 50px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    max-width: 174px;
+    margin: 0 auto;
+  }
+
+  &__social-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  &__right {
+    margin-top: 20px;
+    color: #BDBDBD;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 8px;
+    right: 14px;
   }
 }
 @import "media";
