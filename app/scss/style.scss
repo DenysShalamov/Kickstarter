@@ -526,4 +526,64 @@ video {
     color: #7C7C7C;
   }
 }
+
+.features {
+  &__title {
+    margin-top: 150px;
+    @extend %dinpro-medium;
+    font-size: 56px;
+    line-height: 71px;
+    padding-left: 50px;
+  }
+
+  &__items-sound {
+    margin-top: 24px;
+    margin-left: 43%;
+  }
+
+  &__items-connect {
+    margin-left: 10%;
+  }
+
+  &__items-app {
+    margin-top: 120px;
+    margin-left: 20%;
+  }
+  &__header {
+    margin-bottom: 40px;
+    @extend %dinpro-medium;
+    font-size: 34px;
+    line-height: 38px;
+    color: #0C797A;
+    text-transform: uppercase;
+  }
+
+  &__list-item {
+    list-style: disc;
+    margin: 6px 0;
+    color: $color-text;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    height: 701px;
+    width: 1113px;
+    background-color: #f2f2f2;
+    background-position: 100% 100%;
+    position: absolute;
+    top: 195px;
+    left: 200px;
+    z-index: -1;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 16px;
+    right: 0;
+  }
+}
 @import "media";
