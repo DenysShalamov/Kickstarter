@@ -496,13 +496,16 @@ video {
 .review {
   &__inner {
     text-align: center;
-    margin: 87px auto 0;
+    margin: 0 auto;
     max-width: 786px;
     position: relative;
+    background: url(../images/review.svg) no-repeat;
+    background-position: top;
   }
 
   &__text {
-    margin: 32px auto 30px;
+    margin: 0 auto 30px;
+    padding-top: 35px;
     text-align: center;
     @extend %dinpro-medium;
     font-size: 24px;
