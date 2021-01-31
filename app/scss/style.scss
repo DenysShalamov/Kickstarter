@@ -20,15 +20,18 @@
 
   &__toolbar-item {
     color: $color-text;
-    &:hover {
-      transform: scale(1.1);
-    }
+    
     
     &--buy {
       height: 48px;
       width: 102px;
       background-color: $color-text;
-      transition: transform .3s;
+      transition: transform 2s;
+
+      &:hover {
+        background-color: #0DB2B3;
+        
+      }
     }
   }
 
@@ -39,7 +42,6 @@
     width: 100%;
     color: $color-text;
     &:hover {
-      // color: red;
       font-weight: bold;
     }
 
@@ -113,7 +115,7 @@
     color: $color-text;
     transition: transform .5s;
     &:hover {
-      transform: scale(1.1);
+      color: #0DB2B3;;
     }
   }
 }
