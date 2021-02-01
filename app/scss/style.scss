@@ -57,11 +57,12 @@
   &__inner {
     display: flex;
     margin: 0 auto;
+    max-width: 1194;
   }
 
   &__img {
     order: 1;
-    max-width: 939px;
+    max-width: 816px;
     overflow: hidden;
   }
 
@@ -639,10 +640,10 @@ video {
     border: none;
     transition: transform .2s;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 5px;
 
     &:hover {
-      transform: scale(1.1);
+      background-color:  #333333;
     }
   }
 }
@@ -669,6 +670,15 @@ video {
   &__social-link {
     width: 48px;
     height: 48px;
+    padding-top: 12px;
+
+    &:hover {
+      .footer__social-link--facebook path,
+      .footer__social-link--twitter path,
+      .footer__social-link--inst path {
+        fill: #0DB2B3;
+      }
+    }
   }
 
   &__right {
@@ -680,6 +690,12 @@ video {
     position: absolute;
     top: 8px;
     right: 14px;
+
+    &:hover {
+      .footer__arrow-img path {
+        fill: #0DB2B3;
+      }
+    }
   }
 }
 @import "media";
