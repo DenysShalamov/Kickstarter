@@ -16,4 +16,12 @@ $(function () {
     }, 'xml');
   });
 
+ $('.advantages__inner').slick({
+    infinite: false,
+    mobileFirst: true,
+    responsive: [{
+      breakpoint: 750,
+      settings: "unslick"
+    }]
+  }) 
 });
