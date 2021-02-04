@@ -15,6 +15,13 @@
       margin-right: 30px;
     }
   }
+
+  .design {
+    &__inner {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
 }
 
 @media (max-width: 1020px) {
@@ -31,6 +38,14 @@
 
     &__box {
       max-width: 300px;
+    }
+  }
+
+  .design {
+    &__title {
+      max-width: 430px;
+      left: 40%;
+      font-size: 52px;
     }
   }
 }
@@ -115,6 +130,39 @@
   .slick-list {
     height: 300px;
   }
+
+  .design {
+    &__inner {
+      display: block;
+    }
+
+    &__title {
+      position: static;
+      max-width: 290px;
+      font-size: 37px;
+      line-height: 55px;
+      margin: 0 auto 50px;
+    }
+
+    &__photo {
+      margin: 0 auto 30px;
+      height: 210px;
+      width: 259px;
+      background-size: cover;
+    }
+
+    &__text {
+      margin: 0 auto;
+    }
+
+    &__link {
+      display: block;
+      max-width: 378px;
+      margin: 0 auto;
+    }
+
+    
+  }
 }
 
 @media (min-width: 750px) {
@@ -148,10 +196,13 @@
     float: none;
     width: 100% !important;
     max-width: 350px;
+
+    &:focus {
+      outline: none;
+    }
   }
 
-  .slick-prev,
-  .slick-next {
+  .slider-btn {
     display: none !important;
   }
 }
