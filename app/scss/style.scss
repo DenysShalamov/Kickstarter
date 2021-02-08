@@ -371,8 +371,8 @@ video {
 
   &__img {
     margin: 0 auto;
-    width: 1230px;
-    
+    width: 100%;
+    background-repeat: no-repeat;
     height: 546px;
     background-image: url(../images/technology.png);
     position: relative;
@@ -687,12 +687,12 @@ video {
   &__bg {
     position: absolute;
     height: 701px;
-    width: 1113px;
+    width: 1000px;
     background-color: #f2f2f2;
     background-position: 100% 100%;
     position: absolute;
     top: 195px;
-    left: 200px;
+    right: 0;
     z-index: -1;
   }
 
